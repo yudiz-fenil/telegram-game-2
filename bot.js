@@ -7,7 +7,7 @@ const GAME_URL = 'https://game.yudiz.com/ball-merge-2048/';
 
 const bot = new Telegraf(token);
 const app = express();
-const port = 3022;
+const port = 3028;
 
 app.use(bodyParser.json());
 
@@ -54,5 +54,5 @@ process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 // Set up webhook
-const url = 'https://telegram2.game.webdevprojects.cloud/bot' + token;
+const url = 'https://telegrams2.game.webdevprojects.cloud/bot' + token;
 bot.telegram.setWebhook(url);
